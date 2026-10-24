@@ -1,0 +1,23 @@
+# Tuesday's brain on a server you control: Tuesday + Ollama serving the seven open-weight minds (CPU is fine; 24 GB RAM,
+# e.g. Oracle Always Free). wire-pod runs natively on the same server (see VECTOR-CLOUD-SETUP.md) and reaches Tuesday at
+# http://127.0.0.1:4343. Tuesday is never exposed to the internet directly: you reach the chat page over Tailscale.
+#   cp .env.example .env  (fill it in)  &&  docker compose up -d
+services:
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    environment:
+      OLLAMA_KEEP_ALIVE: ${OLLAMA_KEEP_ALIVE:-5m}   # -1 keeps models loaded (stops Oracle reclaiming an "idle" free server)
+      OLLAMA_MAX_LOADED_MODELS: ${OLLAMA_MAX_LOADED_MODELS:-2}   # Tuesday + the specialist drafting; fits 24 GB
+      OLLAMA_NUM_PARALLEL: "1"                                   # one request per mind at a time: lowest memory
+    volumes: [ollama:/root/.ollama]
+  tuesday:
+    build: ..
+    restart: unless-stopped
+    depends_on: [ollama]
+    env_file: .env
+    environment:
+      OLLAMA_URL: http://ollama:11434
+    ports: ["127.0.0.1:4343:4343"]   # this server only: wire-pod and Tailscale reach it here
+    volumes: [tuesday-data:/data]
+volumes: { ollama: {}, tuesday-data: {} }

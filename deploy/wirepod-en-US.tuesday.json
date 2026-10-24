@@ -1,0 +1,218 @@
+[
+ {
+  "name": "intent_names_username_extend",
+  "keyphrases": [
+   "my name is",
+   "my name's"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_system_charger",
+  "keyphrases": [
+   "go to your charger",
+   "go to the charger",
+   "go back to your charger",
+   "go home vector",
+   "charge yourself"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_system_sleep",
+  "keyphrases": [
+   "go to sleep"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_system_noaudio",
+  "keyphrases": [
+   "[blank_audio]",
+   "[door opens]",
+   "[sighs]"
+  ],
+  "requiresexact": true
+ },
+ {
+  "name": "intent_imperative_volumeup",
+  "keyphrases": [
+   "volume up",
+   "turn the volume up",
+   "louder"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_volumedown",
+  "keyphrases": [
+   "volume down",
+   "turn the volume down",
+   "quieter"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_volumelevel_extend",
+  "keyphrases": [
+   "set volume",
+   "set your volume"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_eyecolor",
+  "keyphrases": [
+   "eye color",
+   "eye colour",
+   "change your eyes"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_lookatme",
+  "keyphrases": [
+   "look at me"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_come",
+  "keyphrases": [
+   "come here",
+   "come to me"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_dance",
+  "keyphrases": [
+   "dance",
+   "dance for me"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_play_fistbump",
+  "keyphrases": [
+   "fist bump"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_play_anytrick",
+  "keyphrases": [
+   "do a trick"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_play_popawheelie",
+  "keyphrases": [
+   "pop a wheelie"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_play_rollcube",
+  "keyphrases": [
+   "roll your cube",
+   "roll the cube"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_play_pickupcube",
+  "keyphrases": [
+   "pick up your cube",
+   "pick up the cube"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_fetchcube",
+  "keyphrases": [
+   "fetch your cube",
+   "fetch the cube"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_findcube",
+  "keyphrases": [
+   "find your cube",
+   "find the cube"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_play_keepaway",
+  "keyphrases": [
+   "play keepaway",
+   "play keep away"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_photo_take_extend",
+  "keyphrases": [
+   "take a photo",
+   "take a picture",
+   "take a selfie"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_forward",
+  "keyphrases": [
+   "move forward",
+   "go forward",
+   "drive forward"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_backup",
+  "keyphrases": [
+   "back up",
+   "reverse",
+   "drive backwards"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_turnaround",
+  "keyphrases": [
+   "turn around"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_turnleft",
+  "keyphrases": [
+   "turn left"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_turnright",
+  "keyphrases": [
+   "turn right"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_quiet",
+  "keyphrases": [
+   "be quiet"
+  ],
+  "requiresexact": false
+ },
+ {
+  "name": "intent_imperative_shutup",
+  "keyphrases": [
+   "shut up"
+  ],
+  "requiresexact": false
+ }
+]

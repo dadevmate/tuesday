@@ -1,0 +1,2 @@
+# Fine-tuning Tuesday Core locally on Apple Silicon.
+mlx-lm>=0.20

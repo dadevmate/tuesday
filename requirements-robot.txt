@@ -1,0 +1,5 @@
+# Vector robot control through wire-pod (installs under the `anki_vector` import name).
+wirepod_vector_sdk>=0.8
+pillow
+# Tuesday's own voice (offline text-to-speech)
+piper-tts

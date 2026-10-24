@@ -1,0 +1,11 @@
+.venv/
+data/
+.env
+train/out/
+__pycache__/
+*.pyc
+.DS_Store
+vendor/
+
+# The owner's own material (questionnaire, personal guide): its own private repo
+private/
